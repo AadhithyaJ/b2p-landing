@@ -1,0 +1,1045 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1503135694876565');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1503135694876565&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-D91D2XQ6NN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-D91D2XQ6NN');
+</script>
+<!-- End Google tag -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>B2P Teachers — Enroll Now</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy:        #070E1C;
+  --navy2:       #0D1B35;
+  --orange:      #F07A1A;
+  --orange2:     #E8680A;
+  --orange-lite: #FF8F2E;
+  --gold:        #F5C130;
+  --cream:       #FAF7F2;
+  --white:       #FFFFFF;
+  --gray:        #6B7280;
+  --gray2:       #9CA3AF;
+  --light:       #F5F6FA;
+  --border:      #E8EBF0;
+  --green:       #16A34A;
+  --green-bg:    #DCFCE7;
+  --red:         #EF4444;
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body {
+  font-family:'Inter',sans-serif;
+  background:var(--cream);
+  color:var(--navy);
+  overflow-x:hidden;
+}
+
+/* NAV */
+.nav {
+  background:rgba(7,14,28,0.97);
+  backdrop-filter:blur(16px);
+  -webkit-backdrop-filter:blur(16px);
+  padding:0 40px;
+  height:62px;
+  display:flex; align-items:center; justify-content:space-between;
+  position:sticky; top:0; z-index:100;
+  border-bottom:1px solid rgba(255,255,255,0.06);
+}
+.nav-logo { display:flex; align-items:center; gap:11px; }
+.logo-mark {
+  background:#ffffff;
+  border-radius:10px;
+  width:50px; height:50px;
+  display:flex; align-items:center; justify-content:center;
+  font-family:'Inter',sans-serif; font-weight:700;
+  font-size:13px; color:white; letter-spacing:-0.5px;
+  box-shadow:0 4px 14px rgba(240,122,26,0.45);
+}
+.nav-name {
+  font-family:'Inter',sans-serif; font-weight:600;
+  font-size:15px; color:white; letter-spacing:-0.2px;
+}
+.nav-phone { font-size:12px; color:rgba(255,255,255,0.42); }
+.nav-register {
+  background:linear-gradient(135deg,#F07A1A 0%,#E8680A 100%);
+  color:white; border:none;
+  font-family:'Inter',sans-serif; font-weight:600;
+  font-size:13px; padding:9px 20px; border-radius:9px;
+  cursor:pointer; text-decoration:none;
+  transition:all 0.22s;
+  box-shadow:0 3px 14px rgba(240,122,26,0.38);
+}
+.nav-register:hover { transform:translateY(-2px); box-shadow:0 7px 22px rgba(240,122,26,0.5); }
+
+/* URGENCY BAR */
+.urgency {
+  background:linear-gradient(90deg,#E8900A 0%,#F5C130 45%,#F07A1A 75%,#E8900A 100%);
+  background-size:250% 100%;
+  animation:shimmerBar 5s linear infinite;
+  text-align:center;
+  padding:10px 20px;
+  font-family:'Inter',sans-serif; font-weight:600;
+  font-size:13px; color:#3D1A00;
+  letter-spacing:-0.1px;
+}
+@keyframes shimmerBar {
+  0%   { background-position:0%   50%; }
+  100% { background-position:250% 50%; }
+}
+#uctimer { color:#7C2000; font-weight:700; font-size:14px; letter-spacing:0.5px; }
+
+/* HERO */
+.hero {
+  background:var(--navy);
+  padding:76px 40px 60px;
+  text-align:center;
+  position:relative; overflow:hidden;
+}
+.hero-orb1 {
+  position:absolute;
+  width:600px; height:600px;
+  background:radial-gradient(circle,rgba(240,122,26,0.17) 0%,transparent 65%);
+  top:-220px; left:50%; transform:translateX(-50%);
+  pointer-events:none;
+  animation:floatOrb1 9s ease-in-out infinite;
+}
+.hero-orb2 {
+  position:absolute;
+  width:350px; height:350px;
+  background:radial-gradient(circle,rgba(245,193,48,0.1) 0%,transparent 70%);
+  bottom:-120px; right:-80px;
+  pointer-events:none;
+  animation:floatOrb2 11s ease-in-out infinite;
+}
+.hero-dots {
+  position:absolute; inset:0;
+  background-image:radial-gradient(rgba(255,255,255,0.035) 1px,transparent 1px);
+  background-size:30px 30px;
+  pointer-events:none;
+}
+@keyframes floatOrb1 {
+  0%,100% { transform:translateX(-50%) translateY(0); }
+  50%      { transform:translateX(-50%) translateY(-22px); }
+}
+@keyframes floatOrb2 {
+  0%,100% { transform:translateY(0); }
+  50%     { transform:translateY(-16px); }
+}
+.hero-inner { position:relative; z-index:1; }
+.hero-chip {
+  display:inline-flex; align-items:center; gap:6px;
+  border:1px solid rgba(240,122,26,0.32);
+  background:rgba(240,122,26,0.08);
+  color:rgba(255,160,80,0.9);
+  font-family:'Inter',sans-serif;
+  font-size:11px; font-weight:600;
+  padding:5px 16px; border-radius:100px;
+  letter-spacing:1.3px; text-transform:uppercase;
+  margin-bottom:28px;
+}
+.hero h1 {
+  font-family:'Inter',sans-serif; font-weight:700;
+  font-size:clamp(30px,5.5vw,60px);
+  color:white; line-height:1.1;
+  margin-bottom:22px;
+  max-width:740px; margin-left:auto; margin-right:auto;
+  letter-spacing:-1.5px;
+}
+.hero h1 .hl {
+  background:linear-gradient(135deg,#F07A1A 0%,#F5C130 100%);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  background-clip:text;
+}
+.hero-sub {
+  font-size:clamp(15px,2vw,17px);
+  color:rgba(255,255,255,0.52);
+  max-width:490px; margin:0 auto 48px;
+  line-height:1.85; font-weight:300;
+}
+
+/* STATS ROW */
+.hero-stats {
+  display:flex; justify-content:center; align-items:stretch;
+  flex-wrap:wrap; margin-bottom:48px;
+  max-width:580px; margin-left:auto; margin-right:auto;
+}
+.hero-stat {
+  padding:0 32px;
+  border-right:1px solid rgba(255,255,255,0.09);
+  text-align:center;
+}
+.hero-stat:last-child { border-right:none; }
+.hero-stat-num {
+  font-family:'Inter',sans-serif; font-weight:700;
+  font-size:32px; color:var(--gold); display:block;
+  letter-spacing:-1.5px; line-height:1; margin-bottom:5px;
+}
+.hero-stat-lbl {
+  font-size:10.5px; color:rgba(255,255,255,0.38);
+  text-transform:uppercase; letter-spacing:0.9px; font-weight:500;
+}
+
+/* HERO CTA */
+.hero-ctas { display:flex; flex-direction:column; align-items:center; gap:16px; }
+.cta-primary {
+  display:inline-flex; align-items:center; gap:10px;
+  background:linear-gradient(135deg,#F07A1A 0%,#E8600A 100%);
+  color:white; border:none;
+  font-family:'Inter',sans-serif; font-weight:600;
+  font-size:16px; padding:19px 52px; border-radius:14px;
+  cursor:pointer; text-decoration:none;
+  transition:all 0.25s;
+  box-shadow:0 8px 36px rgba(240,122,26,0.48),inset 0 1px 0 rgba(255,255,255,0.16);
+  letter-spacing:-0.2px; position:relative; overflow:hidden;
+}
+.cta-primary::after {
+  content:'';
+  position:absolute; inset:0;
+  background:linear-gradient(135deg,rgba(255,255,255,0.1) 0%,transparent 55%);
+  border-radius:inherit; pointer-events:none;
+}
+.cta-primary:hover {
+  transform:translateY(-3px);
+  box-shadow:0 16px 52px rgba(240,122,26,0.58),inset 0 1px 0 rgba(255,255,255,0.16);
+}
+.cta-primary .arrow { font-size:18px; transition:transform 0.2s; display:inline-block; }
+.cta-primary:hover .arrow { transform:translateX(4px); }
+
+.cta-row { display:flex; gap:10px; flex-wrap:wrap; justify-content:center; }
+.cta-pay {
+  display:inline-flex; align-items:center; gap:8px;
+  background:rgba(255,255,255,0.06);
+  border:1px solid rgba(255,255,255,0.13);
+  color:rgba(255,255,255,0.65);
+  font-family:'Inter',sans-serif;
+  font-size:13px; font-weight:500;
+  padding:12px 24px; border-radius:10px;
+  cursor:pointer; text-decoration:none;
+  transition:all 0.2s;
+}
+.cta-pay:hover { background:rgba(255,255,255,0.11); border-color:rgba(255,255,255,0.24); color:white; }
+.cta-pay .pay-icon { font-size:15px; }
+
+.hero-trust {
+  display:flex; gap:28px; justify-content:center;
+  flex-wrap:wrap; margin-top:44px;
+}
+.trust-item {
+  display:flex; align-items:center; gap:7px;
+  font-size:12px; color:rgba(255,255,255,0.38); font-weight:400;
+}
+.trust-dot {
+  width:5px; height:5px; border-radius:50%;
+  background:#22C55E; flex-shrink:0;
+  box-shadow:0 0 6px rgba(34,197,94,0.7);
+  animation:dotPulse 2.4s ease-in-out infinite;
+}
+@keyframes dotPulse {
+  0%,100% { box-shadow:0 0 4px rgba(34,197,94,0.5); }
+  50%      { box-shadow:0 0 10px rgba(34,197,94,0.9); }
+}
+.hero-wave { display:block; width:100%; line-height:0; }
+
+/* PRICING */
+.pricing-section { background:var(--cream); padding:84px 24px; }
+.section-eyebrow {
+  text-align:center;
+  font-family:'Inter',sans-serif; font-weight:600;
+  font-size:11px; color:var(--orange);
+  text-transform:uppercase; letter-spacing:2.5px; margin-bottom:12px;
+}
+.section-title {
+  text-align:center;
+  font-family:'Inter',sans-serif; font-weight:700;
+  font-size:clamp(26px,4vw,42px); color:var(--navy);
+  line-height:1.12; margin-bottom:12px; letter-spacing:-1.2px;
+}
+.section-desc {
+  text-align:center; font-size:15px; color:var(--gray);
+  max-width:480px; margin:0 auto 48px; line-height:1.78; font-weight:400;
+}
+
+/* TOGGLE */
+.toggle-wrap {
+  display:flex; justify-content:center; align-items:center;
+  gap:14px; margin-bottom:48px;
+}
+.toggle-label {
+  font-family:'Inter',sans-serif; font-weight:600;
+  font-size:14px; color:var(--gray2); cursor:pointer; transition:color 0.2s;
+}
+.toggle-label.active { color:var(--navy); }
+.toggle-pill {
+  width:52px; height:28px;
+  background:var(--border); border-radius:14px;
+  position:relative; cursor:pointer; transition:background 0.25s;
+}
+.toggle-pill.on { background:linear-gradient(135deg,#F07A1A,#E8680A); }
+.toggle-thumb {
+  position:absolute; top:3px; left:3px;
+  width:22px; height:22px; border-radius:50%;
+  background:white; transition:transform 0.26s cubic-bezier(0.4,0,0.2,1);
+  box-shadow:0 2px 6px rgba(0,0,0,0.22);
+}
+.toggle-pill.on .toggle-thumb { transform:translateX(24px); }
+.save-badge {
+  background:var(--green-bg); color:var(--green);
+  font-family:'Inter',sans-serif;
+  font-size:11px; font-weight:700; padding:4px 12px;
+  border-radius:100px; letter-spacing:0.3px;
+}
+
+/* PLAN GRID */
+.plans-grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(265px,1fr));
+  gap:22px;
+  max-width:980px; margin:0 auto 28px;
+}
+.plan-card {
+  background:white;
+  border:1px solid var(--border);
+  border-radius:24px; padding:32px 28px;
+  position:relative;
+  transition:transform 0.26s,box-shadow 0.26s;
+  box-shadow:0 2px 18px rgba(0,0,0,0.045);
+}
+.plan-card:hover { transform:translateY(-7px); box-shadow:0 24px 60px rgba(0,0,0,0.1); }
+.plan-card.featured {
+  border:1.5px solid var(--orange);
+  background:linear-gradient(175deg,#FFFBF5 0%,#FFFFFF 55%);
+  box-shadow:0 4px 32px rgba(240,122,26,0.13);
+}
+.plan-card.featured:hover { box-shadow:0 24px 60px rgba(240,122,26,0.2); }
+.featured-pill {
+  position:absolute; top:-14px; left:50%; transform:translateX(-50%);
+  background:linear-gradient(135deg,#F07A1A,#E8680A);
+  color:white;
+  font-family:'Inter',sans-serif; font-weight:600;
+  font-size:11px; padding:5px 18px; border-radius:100px;
+  white-space:nowrap; letter-spacing:0.3px;
+  box-shadow:0 4px 14px rgba(240,122,26,0.45);
+}
+.plan-for-tag {
+  display:inline-block; font-size:11px; font-weight:600;
+  padding:4px 12px; border-radius:100px; margin-bottom:14px; letter-spacing:0.2px;
+}
+.tag-blue   { background:#EFF6FF; color:#2563EB; }
+.tag-orange { background:#FFF7ED; color:#C2410C; }
+.tag-green  { background:#F0FDF4; color:#166534; }
+.plan-name {
+  font-family:'Inter',sans-serif; font-weight:700;
+  font-size:20px; color:var(--navy); margin-bottom:3px; letter-spacing:-0.5px;
+}
+.plan-for-text { font-size:13px; color:var(--gray); margin-bottom:20px; }
+
+/* PRICE */
+.price-main {
+  font-family:'Inter',sans-serif; font-weight:700;
+  font-size:40px; color:var(--orange); letter-spacing:-2px;
+}
+.price-period { font-size:14px; color:var(--gray); font-weight:400; letter-spacing:0; }
+.price-old    { font-size:14px; color:#C8D3E0; text-decoration:line-through; margin-left:6px; }
+.yearly-note {
+  font-size:12px; color:var(--green); font-weight:600;
+  background:var(--green-bg); padding:5px 12px;
+  border-radius:8px; display:inline-block; margin:8px 0 16px;
+}
+.monthly-note { font-size:12px; color:var(--gray2); margin-bottom:16px; margin-top:5px; }
+.plan-divider { border:none; border-top:1px solid var(--border); margin:16px 0; }
+.plan-features { list-style:none; margin-bottom:26px; }
+.plan-feat {
+  font-size:13.5px; color:#374151; padding:6px 0;
+  display:flex; align-items:flex-start; gap:10px; line-height:1.5;
+}
+.feat-check {
+  width:18px; height:18px; border-radius:50%;
+  background:var(--green-bg); flex-shrink:0; margin-top:1px;
+  display:flex; align-items:center; justify-content:center;
+  font-size:10px; color:var(--green); font-weight:700;
+}
+.plan-btn {
+  width:100%; padding:14px;
+  border-radius:12px; font-family:'Inter',sans-serif;
+  font-weight:600; font-size:14px; cursor:pointer;
+  letter-spacing:-0.1px;
+  border:1.5px solid; transition:all 0.22s; text-decoration:none;
+  display:block; text-align:center;
+}
+.btn-fill {
+  background:linear-gradient(135deg,#F07A1A,#E8680A);
+  color:white; border-color:transparent;
+  box-shadow:0 5px 18px rgba(240,122,26,0.38);
+}
+.btn-fill:hover { transform:translateY(-1px); box-shadow:0 10px 28px rgba(240,122,26,0.48); }
+.btn-ghost { background:transparent; color:var(--navy); border-color:var(--border); }
+.btn-ghost:hover { background:var(--light); border-color:#C0C8D8; }
+
+/* SIBLINGS */
+.siblings-box {
+  max-width:980px; margin:0 auto;
+  background:var(--navy2);
+  border-radius:24px; padding:36px 44px;
+  display:flex; align-items:center; justify-content:space-between;
+  flex-wrap:wrap; gap:24px;
+  position:relative; overflow:hidden;
+  border:1px solid rgba(255,255,255,0.07);
+}
+.siblings-box::before {
+  content:'';
+  position:absolute; width:320px; height:320px;
+  background:radial-gradient(circle,rgba(240,122,26,0.14) 0%,transparent 68%);
+  top:-100px; right:-60px; pointer-events:none;
+}
+.siblings-left .sib-title {
+  font-family:'Inter',sans-serif; font-weight:700;
+  font-size:19px; color:white; margin-bottom:5px; letter-spacing:-0.3px;
+}
+.siblings-left .sib-sub { font-size:13px; color:rgba(255,255,255,0.48); line-height:1.65; max-width:340px; }
+.sib-pricing { display:flex; align-items:center; gap:24px; flex-wrap:wrap; position:relative; z-index:1; }
+.sib-price-block { text-align:left; }
+.sib-label { font-size:10.5px; color:rgba(255,255,255,0.38); text-transform:uppercase; letter-spacing:1px; display:block; margin-bottom:3px; }
+.sib-amount {
+  font-family:'Inter',sans-serif; font-weight:700;
+  font-size:25px; color:var(--gold); display:block; letter-spacing:-1px;
+}
+.sib-save { font-size:11px; color:#86EFAC; font-weight:500; }
+.sib-divider { width:1px; height:46px; background:rgba(255,255,255,0.1); }
+.sib-btn {
+  background:linear-gradient(135deg,#F07A1A,#E8680A);
+  color:white; border:none;
+  font-family:'Inter',sans-serif; font-weight:600;
+  font-size:14px; padding:14px 30px; border-radius:12px;
+  cursor:pointer; letter-spacing:-0.1px;
+  transition:all 0.22s; text-decoration:none;
+  display:inline-block;
+  box-shadow:0 5px 18px rgba(240,122,26,0.42);
+  position:relative; z-index:1;
+}
+.sib-btn:hover { transform:translateY(-2px); box-shadow:0 10px 28px rgba(240,122,26,0.55); }
+
+/* TRUST */
+.trust-section {
+  background:white;
+  padding:68px 24px;
+  border-top:1px solid var(--border);
+  border-bottom:1px solid var(--border);
+}
+.trust-grid {
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:30px; max-width:900px; margin:0 auto;
+}
+.trust-card { text-align:center; padding:8px; }
+.trust-icon {
+  width:54px; height:54px; border-radius:16px;
+  background:linear-gradient(145deg,#FFF5E8,#FFF9F0);
+  border:1px solid rgba(240,122,26,0.1);
+  margin:0 auto 16px;
+  display:flex; align-items:center; justify-content:center;
+  font-size:22px;
+  transition:transform 0.25s;
+}
+.trust-card:hover .trust-icon { transform:scale(1.12) rotate(-4deg); }
+.trust-card-title {
+  font-family:'Inter',sans-serif; font-weight:600;
+  font-size:14px; color:var(--navy); margin-bottom:6px; letter-spacing:-0.2px;
+}
+.trust-card-text { font-size:12.5px; color:var(--gray); line-height:1.68; }
+
+/* FINAL CTA */
+.final-section {
+  background:var(--navy);
+  padding:88px 24px; text-align:center;
+  position:relative; overflow:hidden;
+}
+.final-section::before {
+  content:'';
+  position:absolute; width:640px; height:640px;
+  background:radial-gradient(circle,rgba(240,122,26,0.12) 0%,transparent 65%);
+  top:50%; left:50%; transform:translate(-50%,-50%);
+  pointer-events:none;
+}
+.final-section::after {
+  content:'';
+  position:absolute; inset:0;
+  background-image:radial-gradient(rgba(255,255,255,0.03) 1px,transparent 1px);
+  background-size:30px 30px;
+  pointer-events:none;
+}
+.final-section > * { position:relative; z-index:1; }
+.final-section h2 {
+  font-family:'Inter',sans-serif; font-weight:700;
+  font-size:clamp(24px,4vw,44px); color:white;
+  margin-bottom:14px; line-height:1.18; letter-spacing:-1.8px;
+}
+.final-section h2 em { font-style:normal; color:var(--orange); }
+.final-section p {
+  font-size:15px; color:rgba(255,255,255,0.48);
+  max-width:420px; margin:0 auto 48px; line-height:1.82;
+}
+.final-btns {
+  display:flex; gap:14px; justify-content:center; flex-wrap:wrap; margin-bottom:34px;
+}
+.btn-final-primary {
+  display:inline-flex; align-items:center; gap:8px;
+  background:linear-gradient(135deg,#F07A1A,#E8600A);
+  color:white; border:none;
+  font-family:'Inter',sans-serif; font-weight:600;
+  font-size:16px; padding:18px 44px; border-radius:13px;
+  cursor:pointer; text-decoration:none;
+  box-shadow:0 8px 36px rgba(240,122,26,0.48),inset 0 1px 0 rgba(255,255,255,0.14);
+  transition:all 0.25s; position:relative; overflow:hidden;
+}
+.btn-final-primary::after {
+  content:'';
+  position:absolute; inset:0;
+  background:linear-gradient(135deg,rgba(255,255,255,0.09) 0%,transparent 55%);
+  pointer-events:none;
+}
+.btn-final-primary:hover { transform:translateY(-3px); box-shadow:0 18px 52px rgba(240,122,26,0.58); }
+.btn-final-outline {
+  display:inline-flex; align-items:center; gap:8px;
+  background:rgba(255,255,255,0.06);
+  backdrop-filter:blur(8px);
+  color:white;
+  border:1px solid rgba(255,255,255,0.17);
+  font-family:'Inter',sans-serif; font-weight:600;
+  font-size:15px; padding:17px 36px; border-radius:13px;
+  cursor:pointer; text-decoration:none; transition:all 0.22s;
+}
+.btn-final-outline:hover { background:rgba(255,255,255,0.1); border-color:rgba(255,255,255,0.3); }
+.contact-row {
+  display:flex; gap:14px; justify-content:center;
+  flex-wrap:wrap; margin-top:28px;
+}
+.contact-chip {
+  display:inline-flex; align-items:center; gap:14px;
+  background:rgba(255,255,255,0.06);
+  border:1px solid rgba(255,255,255,0.12);
+  border-radius:14px; padding:14px 22px;
+  text-decoration:none; transition:all 0.22s;
+  min-width:210px;
+}
+.contact-chip:hover {
+  background:rgba(255,255,255,0.11);
+  border-color:rgba(245,193,48,0.4);
+  transform:translateY(-2px);
+  box-shadow:0 8px 28px rgba(0,0,0,0.3);
+}
+.contact-chip-icon {
+  width:40px; height:40px; border-radius:10px;
+  background:rgba(240,122,26,0.15);
+  border:1px solid rgba(240,122,26,0.25);
+  display:flex; align-items:center; justify-content:center;
+  font-size:18px; flex-shrink:0;
+}
+.contact-chip-label {
+  display:block; font-size:10px; font-weight:600;
+  color:rgba(255,255,255,0.35); text-transform:uppercase;
+  letter-spacing:0.9px; margin-bottom:3px;
+}
+.contact-chip-value {
+  display:block; font-size:13.5px; font-weight:500;
+  color:rgba(255,255,255,0.82); letter-spacing:-0.2px;
+}
+
+/* FOOTER */
+footer {
+  background:#030810;
+  padding:26px 24px; text-align:center;
+  border-top:1px solid rgba(255,255,255,0.04);
+}
+footer p { font-size:12px; color:rgba(255,255,255,0.24); line-height:1.9; }
+footer a { color:var(--orange); text-decoration:none; }
+
+/* PRIVACY MODAL */
+.pp-overlay {
+  display:none; position:fixed; inset:0; z-index:1000;
+  background:rgba(7,14,28,0.72); backdrop-filter:blur(6px);
+  -webkit-backdrop-filter:blur(6px);
+  align-items:center; justify-content:center;
+  padding:20px;
+}
+.pp-overlay.open { display:flex; }
+.pp-box {
+  background:#fff; border-radius:18px;
+  max-width:680px; width:100%;
+  max-height:88vh; display:flex; flex-direction:column;
+  box-shadow:0 32px 80px rgba(7,14,28,0.38);
+  overflow:hidden;
+}
+.pp-header {
+  display:flex; align-items:center; justify-content:space-between;
+  padding:22px 28px 18px;
+  border-bottom:1px solid var(--border);
+  background:var(--navy);
+  flex-shrink:0;
+}
+.pp-title {
+  font-family:'Inter',sans-serif; font-weight:700;
+  font-size:18px; color:#fff; letter-spacing:-0.4px;
+}
+.pp-close {
+  width:34px; height:34px; border-radius:50%;
+  background:rgba(255,255,255,0.1); border:none;
+  color:#fff; font-size:20px; line-height:1;
+  cursor:pointer; display:flex; align-items:center; justify-content:center;
+  transition:background 0.18s;
+}
+.pp-close:hover { background:rgba(255,255,255,0.22); }
+.pp-body {
+  overflow-y:auto; padding:28px 28px 32px;
+  font-family:'Inter',sans-serif; color:var(--navy);
+  line-height:1.78; font-size:14px;
+}
+.pp-updated { font-size:12px; color:var(--gray2); margin-bottom:22px; }
+.pp-body h3 {
+  font-size:13.5px; font-weight:700; color:var(--navy);
+  margin:22px 0 8px; letter-spacing:-0.2px;
+  text-transform:uppercase; letter-spacing:0.5px;
+}
+.pp-body p { margin-bottom:10px; }
+.pp-body ul { padding-left:20px; margin-bottom:10px; }
+.pp-body ul li { margin-bottom:5px; }
+.pp-body a { color:var(--orange); text-decoration:none; }
+.pp-body a:hover { text-decoration:underline; }
+
+/* WA FLOAT */
+.wa-float {
+  position:fixed; bottom:24px; right:24px; z-index:200;
+  width:54px; height:54px; background:#25D366;
+  border-radius:50%; display:flex; align-items:center; justify-content:center;
+  text-decoration:none; font-size:24px;
+  box-shadow:0 6px 24px rgba(37,211,102,0.48);
+  transition:transform 0.22s,box-shadow 0.22s;
+  animation:waWobble 4s ease-in-out infinite;
+}
+.wa-float:hover { transform:scale(1.12); box-shadow:0 12px 36px rgba(37,211,102,0.6); }
+@keyframes waWobble {
+  0%,90%,100% { transform:scale(1); }
+  94%          { transform:scale(1.08); }
+  97%          { transform:scale(0.96); }
+}
+
+/* RESPONSIVE */
+@media (max-width:900px) {
+  .siblings-box { flex-direction:column; align-items:stretch; }
+  .sib-btn { width:100%; text-align:center; }
+}
+@media (max-width:640px) {
+  .nav { padding:0 14px; }
+  .nav-phone { display:none; }
+  .nav-register { padding:7px 13px; font-size:12px; }
+  .urgency { font-size:11px; padding:8px 12px; }
+  .hero { padding:44px 16px 36px; }
+  .hero-stat { padding:0 18px; }
+  .hero-stat-num { font-size:24px; }
+  .hero-stat-lbl { font-size:10px; }
+  .cta-primary { font-size:15px; padding:16px 24px; width:100%; justify-content:center; }
+  .cta-row { flex-direction:column; width:100%; }
+  .cta-pay { justify-content:center; width:100%; }
+  .hero-trust { gap:10px; }
+  .pricing-section { padding:56px 14px; }
+  .plans-grid { grid-template-columns:1fr; gap:16px; }
+  .siblings-box { padding:26px 20px; }
+  .sib-divider { display:none; }
+  .sib-pricing { gap:20px; }
+  .trust-section { padding:48px 16px; }
+  .trust-grid { grid-template-columns:repeat(2,1fr); gap:16px; }
+  .final-section { padding:56px 16px; }
+  .final-btns { flex-direction:column; }
+  .btn-final-primary,
+  .btn-final-outline { width:100%; justify-content:center; }
+  .contact-row { flex-direction:column; align-items:center; gap:10px; }
+  .contact-chip { min-width:unset; width:100%; max-width:320px; }
+}
+@media (max-width:400px) {
+  .logo-mark { width:32px; height:32px; font-size:11px; }
+  .urgency { font-size:10px; }
+  .hero-stat { padding:0 12px; }
+  .hero-stat-num { font-size:20px; }
+  .trust-grid { grid-template-columns:1fr; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-logo">
+<div class="logo-mark">
+  <img src="https://app.b2pteachers.com/logo.png" 
+       alt="B2P" 
+       style="width:100%;height:100%;object-fit:contain;border-radius:10px;">
+</div>    
+<span class="nav-name">B2P Teachers</span>
+  </div>
+  <div style="display:flex;align-items:center;gap:20px;">
+    <span class="nav-phone">📞 70946 75153</span>
+    <a href="https://app.b2pteachers.com/student-register" class="nav-register" target="_blank">Register Now →</a>
+  </div>
+</nav>
+
+<!-- URGENCY -->
+<div class="urgency">
+  🔥 Launch Offer — 37% OFF for first 500 enrollments &nbsp;|&nbsp; <span id="uctimer">--d --h --m --s</span>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-orb1"></div>
+  <div class="hero-orb2"></div>
+  <div class="hero-dots"></div>
+  <div class="hero-inner">
+    <div class="hero-chip">Online Classes · 3rd to 12th Standard · Tamil Nadu</div>
+    <h1>Build Your Child's <span class="hl">Character</span><br>Along with Their Marks.</h1>
+    <p class="hero-sub">Live online classes that develop discipline, confidence, moral values, and academic skills — every morning at 5 AM.</p>
+
+    <div class="hero-stats">
+      <div class="hero-stat"><span class="hero-stat-num">500</span><span class="hero-stat-lbl">Seats Only</span></div>
+      <div class="hero-stat"><span class="hero-stat-num">5 AM</span><span class="hero-stat-lbl">Daily Class</span></div>
+      <div class="hero-stat"><span class="hero-stat-num">₹199</span><span class="hero-stat-lbl">Starts From</span></div>
+    </div>
+
+    <div class="hero-ctas">
+      <a href="https://app.b2pteachers.com/student-register" class="cta-primary" target="_blank">
+        🎓 Student Registration <span class="arrow">→</span>
+      </a>
+      <div class="cta-row">
+        <a href="https://wa.me/917094675153?text=Hi B2P Teachers! I want to make a direct payment. Please guide me." class="cta-pay" target="_blank">
+          <span class="pay-icon">💬</span> Speak with Our Team
+        </a>
+        <a href="#siblings-plan" class="cta-pay">
+          <span class="pay-icon">👨‍👩‍👧</span> Siblings Plan Payment
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-trust">
+      <div class="trust-item"><div class="trust-dot"></div> Live Online Classes</div>
+      <div class="trust-item"><div class="trust-dot"></div> Tamil Medium Available</div>
+      <div class="trust-item"><div class="trust-dot"></div> Cancel Anytime</div>
+      <div class="trust-item"><div class="trust-dot"></div> Parent Progress Dashboard</div>
+    </div>
+  </div>
+</section>
+<svg class="hero-wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 52" preserveAspectRatio="none">
+  <path fill="#FAF7F2" d="M0,34 C360,68 1080,0 1440,34 L1440,52 L0,52 Z"/>
+</svg>
+
+<!-- PRICING -->
+<section class="pricing-section">
+  <p class="section-eyebrow">Transparent Pricing</p>
+  <h2 class="section-title">Clear Plans. Zero Surprises.</h2>
+  <p class="section-desc">Choose monthly or yearly. Yearly saves you more — pay for 10 months, get 12 full months of learning.</p>
+
+  <div class="toggle-wrap">
+    <span class="toggle-label active" id="lbl-monthly">Monthly</span>
+    <div class="toggle-pill" id="billingToggle" onclick="toggleBilling()">
+      <div class="toggle-thumb"></div>
+    </div>
+    <span class="toggle-label" id="lbl-yearly">Yearly</span>
+    <span class="save-badge">Save ₹1,000+</span>
+  </div>
+
+  <div class="plans-grid">
+
+    <div class="plan-card">
+      <span class="plan-for-tag tag-blue">3rd to 9th Std &amp; 11th Std</span>
+      <p class="plan-name">Foundation Plan</p>
+      <p class="plan-for-text">Character, discipline &amp; subject classes</p>
+      <div id="price-foundation">
+        <span class="price-main">₹499</span>
+        <span class="price-period">/month</span>
+        <span class="price-old">₹799</span>
+        <p class="monthly-note">Billed monthly. Cancel anytime.</p>
+      </div>
+      <hr class="plan-divider">
+      <ul class="plan-features">
+        <li class="plan-feat"><span class="feat-check">✓</span>Live online classes — all subjects</li>
+        <li class="plan-feat"><span class="feat-check">✓</span>Moral &amp; character sessions (2×/week)</li>
+        <li class="plan-feat"><span class="feat-check">✓</span>Doubt clearing sessions</li>
+        <li class="plan-feat"><span class="feat-check">✓</span>Parent progress tracking</li>
+        <li class="plan-feat"><span class="feat-check">✓</span>Study group access</li>
+      </ul>
+      <a href="https://app.b2pteachers.com/student-register" class="plan-btn btn-ghost" target="_blank">Enroll Now →</a>
+    </div>
+
+    <div class="plan-card featured">
+      <div class="featured-pill">⭐ Board Exam Focus</div>
+      <span class="plan-for-tag tag-orange">10th & 12th Standard Only</span>
+      <p class="plan-name">Board Prep Plan</p>
+      <p class="plan-for-text">Full board exam preparation + life skills</p>
+      <div id="price-board">
+        <span class="price-main">₹699</span>
+        <span class="price-period">/month</span>
+        <span class="price-old">₹1,099</span>
+        <p class="monthly-note">Billed monthly. Cancel anytime.</p>
+      </div>
+      <hr class="plan-divider">
+      <ul class="plan-features">
+        <li class="plan-feat"><span class="feat-check">✓</span>Live classes — all core subjects</li>
+        <li class="plan-feat"><span class="feat-check">✓</span>1-on-1 mentor call (monthly)</li>
+        <li class="plan-feat"><span class="feat-check">✓</span>Moral + motivation sessions</li>
+        <li class="plan-feat"><span class="feat-check">✓</span>Board exam mock tests</li>
+        <li class="plan-feat"><span class="feat-check">✓</span>Parent progress dashboard</li>
+        <li class="plan-feat"><span class="feat-check">✓</span>Exam strategy masterclass</li>
+      </ul>
+      <a href="https://app.b2pteachers.com/student-register" class="plan-btn btn-fill" target="_blank">Enroll Now →</a>
+    </div>
+
+    <div class="plan-card">
+      <span class="plan-for-tag tag-green">All Classes — Add-on</span>
+      <p class="plan-name">Character Plan</p>
+      <p class="plan-for-text">Standalone moral &amp; life skills only</p>
+      <div id="price-moral">
+        <span class="price-main">₹199</span>
+        <span class="price-period">/month</span>
+        <span class="price-old">₹399</span>
+        <p class="monthly-note">Billed monthly. Cancel anytime.</p>
+      </div>
+      <hr class="plan-divider">
+      <ul class="plan-features">
+        <li class="plan-feat"><span class="feat-check">✓</span>Moral &amp; values sessions</li>
+        <li class="plan-feat"><span class="feat-check">✓</span>Goal-setting workshops</li>
+        <li class="plan-feat"><span class="feat-check">✓</span>Confidence &amp; focus training</li>
+        <li class="plan-feat"><span class="feat-check">✓</span>Suitable for all standards</li>
+      </ul>
+      <a href="https://app.b2pteachers.com/student-register" class="plan-btn btn-ghost" target="_blank">Enroll Now →</a>
+    </div>
+
+  </div>
+
+  <div class="siblings-box" id="siblings-plan">
+    <div class="siblings-left">
+      <p class="sib-title">👨‍👩‍👧 Siblings Plan — Enroll 2 Children</p>
+      <p class="sib-sub">Foundation + Board Prep for two children in the same family. Save every month.</p>
+    </div>
+    <div class="sib-pricing">
+      <div class="sib-price-block">
+        <span class="sib-label">Monthly</span>
+        <span class="sib-amount">₹999<small style="font-size:12px;color:rgba(255,255,255,0.38)">/mo</small></span>
+        <span class="sib-save">Was ₹1,198 — save ₹199</span>
+      </div>
+      <div class="sib-divider"></div>
+      <div class="sib-price-block">
+        <span class="sib-label">Yearly</span>
+        <span class="sib-amount">₹8,990<small style="font-size:12px;color:rgba(255,255,255,0.38)">/yr</small></span>
+        <span class="sib-save">Save ₹2,990 vs monthly</span>
+      </div>
+    </div>
+    <a href="https://wa.me/917094675153?text=Hi B2P Teachers! I want to know more about the Siblings Plan. Please guide me." class="sib-btn" target="_blank">💬 Speak with Our Team</a>
+  </div>
+</section>
+
+<!-- TRUST -->
+<section class="trust-section">
+  <div class="trust-grid">
+    <div class="trust-card">
+      <div class="trust-icon">⏰</div>
+      <p class="trust-card-title">5 AM Live Classes</p>
+      <p class="trust-card-text">Daily sessions before school — builds discipline before anything else.</p>
+    </div>
+    <div class="trust-card">
+      <div class="trust-icon">📱</div>
+      <p class="trust-card-title">Tamil Medium Available</p>
+      <p class="trust-card-text">All sessions in Tamil so students understand deeply and parents can follow along.</p>
+    </div>
+    <div class="trust-card">
+      <div class="trust-icon">📊</div>
+      <p class="trust-card-title">Parent Dashboard</p>
+      <p class="trust-card-text">Track your child's attendance, progress, and improvements in real time.</p>
+    </div>
+    <div class="trust-card">
+      <div class="trust-icon">🔒</div>
+      <p class="trust-card-title">Cancel Anytime</p>
+      <p class="trust-card-text">No lock-in on monthly plans. Try with full confidence, zero risk.</p>
+    </div>
+    <div class="trust-card">
+      <div class="trust-icon">🎓</div>
+      <p class="trust-card-title">Certified Teachers</p>
+      <p class="trust-card-text">Experienced mentors who teach character as deeply as they teach subjects.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-section">
+  <h2><em>500 Left.</em> Register Before It's Gone.</h2>
+  <p>Register → Pay → Enrolled. The whole process takes under 2 minutes. Start now.</p>
+  <div class="final-btns">
+    <a href="https://app.b2pteachers.com/student-register" class="btn-final-primary" target="_blank">
+      🎓 Student Registration →
+    </a>
+    <a href="https://wa.me/917094675153?text=Hi B2P Teachers! I want to enroll my child. Please guide me." class="btn-final-outline" target="_blank">
+      💬 WhatsApp Us
+    </a>
+  </div>
+  <div class="contact-row">
+    <a href="mailto:b2pteachers@gmail.com" class="contact-chip">
+      <span class="contact-chip-icon">✉️</span>
+      <div>
+        <span class="contact-chip-label">Email Us</span>
+        <span class="contact-chip-value">b2pteachers@gmail.com</span>
+      </div>
+    </a>
+    <a href="tel:+917094675153" class="contact-chip">
+      <span class="contact-chip-icon">📞</span>
+      <div>
+        <span class="contact-chip-label">Call Us</span>
+        <span class="contact-chip-value">+91 70946 75153</span>
+      </div>
+    </a>
+  </div>
+</section>
+
+<footer>
+  <p style="margin-bottom:6px;color:rgba(255,255,255,0.45);font-size:13px;">B2P Teachers — Innovative Online Classes · Tamil Nadu</p>
+  <p>© 2025 B2P Teachers. All rights reserved. &nbsp;|&nbsp; <a href="#" onclick="openPrivacy(event)">Privacy Policy</a></p>
+</footer>
+
+<!-- PRIVACY POLICY MODAL -->
+<div id="privacy-modal" class="pp-overlay" role="dialog" aria-modal="true" aria-label="Privacy Policy">
+  <div class="pp-box">
+    <div class="pp-header">
+      <h2 class="pp-title">Privacy Policy</h2>
+      <button class="pp-close" onclick="closePrivacy()" aria-label="Close">&times;</button>
+    </div>
+    <div class="pp-body">
+      <p class="pp-updated">Last updated: April 29, 2025</p>
+
+      <h3>1. Who We Are</h3>
+      <p>B2P Teachers ("we", "our", "us") provides live online coaching for school students across Tamil Nadu. Our website is <strong>b2pteachers.com</strong> and our registration platform is <strong>app.b2pteachers.com</strong>. For any privacy queries, contact us at <a href="mailto:b2pteachers@gmail.com">b2pteachers@gmail.com</a> or call <a href="tel:+917094675153">+91 70946 75153</a>.</p>
+
+      <h3>2. Information We Collect</h3>
+      <p>When you register or make a payment, we collect:</p>
+      <ul>
+        <li><strong>Student details</strong> — name, class/grade, school name</li>
+        <li><strong>Parent/Guardian details</strong> — name, mobile number, email address</li>
+        <li><strong>Payment information</strong> — processed securely by Razorpay; we do not store card or UPI credentials</li>
+        <li><strong>Usage data</strong> — pages visited, browser type, device, and IP address (via standard web analytics)</li>
+      </ul>
+
+      <h3>3. How We Use Your Information</h3>
+      <ul>
+        <li>To process enrollment and send class access details</li>
+        <li>To send attendance reports, progress updates, and reminders via WhatsApp or SMS</li>
+        <li>To respond to support queries</li>
+        <li>To improve our classes and website experience</li>
+        <li>To send promotional messages about new courses or offers (you may opt out at any time)</li>
+      </ul>
+
+      <h3>4. Children's Privacy</h3>
+      <p>Our services are designed for school-age children. We collect student information only with parental/guardian consent obtained during registration. We do not knowingly allow children to register independently and we do not share student data with third parties for advertising purposes.</p>
+
+      <h3>5. Sharing of Information</h3>
+      <p>We do not sell your personal data. We may share information with:</p>
+      <ul>
+        <li><strong>Razorpay</strong> — to process payments securely</li>
+        <li><strong>WhatsApp Business API</strong> — to send class updates and notifications</li>
+        <li><strong>Google Analytics / Meta Pixel</strong> — anonymized usage analytics only</li>
+        <li>Legal authorities if required by law</li>
+      </ul>
+
+      <h3>6. Cookies</h3>
+      <p>We use cookies to remember your preferences and measure ad performance. You can disable cookies in your browser settings; note that some site features may not function correctly if you do so.</p>
+
+      <h3>7. Data Retention</h3>
+      <p>We retain your personal data for as long as your child is enrolled with B2P Teachers and for up to 2 years after the last interaction, after which it is securely deleted or anonymized.</p>
+
+      <h3>8. Your Rights</h3>
+      <p>You have the right to access, correct, or request deletion of your personal data. To exercise these rights, email us at <a href="mailto:b2pteachers@gmail.com">b2pteachers@gmail.com</a>. We will respond within 30 days.</p>
+
+      <h3>9. Security</h3>
+      <p>We use HTTPS encryption and industry-standard security practices to protect your data. Payment transactions are handled entirely by Razorpay's PCI-DSS-compliant infrastructure.</p>
+
+      <h3>10. Changes to This Policy</h3>
+      <p>We may update this Privacy Policy from time to time. The latest version will always be available on this page with an updated date. Continued use of our services after changes constitutes acceptance of the revised policy.</p>
+
+      <h3>11. Contact Us</h3>
+      <p>B2P Teachers, Tamil Nadu, India<br>
+      Email: <a href="mailto:b2pteachers@gmail.com">b2pteachers@gmail.com</a><br>
+      Phone: <a href="tel:+917094675153">+91 70946 75153</a></p>
+    </div>
+  </div>
+</div>
+
+<a href="https://wa.me/917094675153?text=Hi B2P Teachers! I want to know more." class="wa-float" target="_blank" title="WhatsApp">💬</a>
+
+<script>
+(function(){
+  const end = new Date('2025-05-15T23:59:59');
+  function tick(){
+    const diff = end - Date.now();
+    if(diff <= 0){ document.getElementById('uctimer').textContent = 'CLOSED'; return; }
+    const d = Math.floor(diff/86400000),
+          h = Math.floor(diff%86400000/3600000),
+          m = Math.floor(diff%3600000/60000),
+          s = Math.floor(diff%60000/1000);
+    document.getElementById('uctimer').textContent =
+      d+'d '+String(h).padStart(2,'0')+'h '+String(m).padStart(2,'0')+'m '+String(s).padStart(2,'0')+'s';
+  }
+  tick(); setInterval(tick,1000);
+})();
+
+function openPrivacy(e){ e.preventDefault(); document.getElementById('privacy-modal').classList.add('open'); document.body.style.overflow='hidden'; }
+function closePrivacy(){ document.getElementById('privacy-modal').classList.remove('open'); document.body.style.overflow=''; }
+document.getElementById('privacy-modal').addEventListener('click',function(e){ if(e.target===this) closePrivacy(); });
+document.addEventListener('keydown',function(e){ if(e.key==='Escape') closePrivacy(); });
+
+let isYearly = false;
+const prices = {
+  foundation:{ monthly:'₹499', monthly_old:'₹799', yearly:'₹3,990', yearly_old:'₹4,990', yearly_note:'2 months FREE · Save ₹1,000 vs monthly' },
+  board:     { monthly:'₹699', monthly_old:'₹1,099', yearly:'₹5,990', yearly_old:'₹6,990', yearly_note:'2 months FREE · Save ₹1,000 vs monthly' },
+  moral:     { monthly:'₹199', monthly_old:'₹399', yearly:'₹990',   yearly_old:'₹1,990', yearly_note:'2 months FREE · Save ₹1,000 vs monthly' }
+};
+function renderPrice(id,plan,yearly){
+  const p = prices[plan];
+  const c = document.getElementById('price-'+id);
+  if(yearly){
+    c.innerHTML='<span class="price-main">'+p.yearly+'</span><span class="price-period">/year</span><span class="price-old">'+p.yearly_old+'</span><p class="yearly-note">🎉 '+p.yearly_note+'</p>';
+  } else {
+    c.innerHTML='<span class="price-main">'+p.monthly+'</span><span class="price-period">/month</span><span class="price-old">'+p.monthly_old+'</span><p class="monthly-note">Billed monthly. Cancel anytime.</p>';
+  }
+}
+function toggleBilling(){
+  isYearly=!isYearly;
+  document.getElementById('billingToggle').classList.toggle('on',isYearly);
+  document.getElementById('lbl-monthly').classList.toggle('active',!isYearly);
+  document.getElementById('lbl-yearly').classList.toggle('active',isYearly);
+  renderPrice('foundation','foundation',isYearly);
+  renderPrice('board','board',isYearly);
+  renderPrice('moral','moral',isYearly);
+}
+</script>
+</body>
+</html>
