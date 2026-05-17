@@ -760,16 +760,7 @@ footer a { color:var(--orange); text-decoration:none; }
 <section class="pricing-section" id="pricing-plan">
   <p class="section-eyebrow">Transparent Pricing</p>
   <h2 class="section-title">Clear Plans. Zero Surprises.</h2>
-  <p class="section-desc">Choose monthly or yearly. Yearly saves you more — pay for 10 months, get 12 full months of learning.</p>
-
-  <div class="toggle-wrap">
-    <span class="toggle-label active" id="lbl-monthly">Monthly</span>
-    <div class="toggle-pill" id="billingToggle" onclick="toggleBilling()">
-      <div class="toggle-thumb"></div>
-    </div>
-    <span class="toggle-label" id="lbl-yearly">Yearly</span>
-    <span class="save-badge">Save ₹1,000+</span>
-  </div>
+  <p class="section-desc">Yearly billing only — pay for 10 months, get 12 months of learning.</p>
 
   <div class="plans-grid">
 
@@ -778,10 +769,9 @@ footer a { color:var(--orange); text-decoration:none; }
       <p class="plan-name">Foundation Plan</p>
       <p class="plan-for-text">Character, discipline &amp; subject classes</p>
       <div id="price-foundation">
-        <span class="price-main">₹499</span>
-        <span class="price-period">/month</span>
-        <span class="price-old">₹799</span>
-        <p class="monthly-note">Billed monthly. Cancel anytime.</p>
+        <span class="price-main">₹3,990</span>
+        <span class="price-period">/year</span>
+        <span class="price-old">₹4,990</span>
       </div>
       <hr class="plan-divider">
       <ul class="plan-features">
@@ -800,10 +790,9 @@ footer a { color:var(--orange); text-decoration:none; }
       <p class="plan-name">Board Prep Plan</p>
       <p class="plan-for-text">Full board exam preparation + life skills</p>
       <div id="price-board">
-        <span class="price-main">₹699</span>
-        <span class="price-period">/month</span>
-        <span class="price-old">₹1,099</span>
-        <p class="monthly-note">Billed monthly. Cancel anytime.</p>
+        <span class="price-main">₹5,990</span>
+        <span class="price-period">/year</span>
+        <span class="price-old">₹6,990</span>
       </div>
       <hr class="plan-divider">
       <ul class="plan-features">
@@ -822,10 +811,9 @@ footer a { color:var(--orange); text-decoration:none; }
       <p class="plan-name">Character Plan</p>
       <p class="plan-for-text">Standalone moral &amp; life skills only</p>
       <div id="price-moral">
-        <span class="price-main">₹199</span>
-        <span class="price-period">/month</span>
-        <span class="price-old">₹399</span>
-        <p class="monthly-note">Billed monthly. Cancel anytime.</p>
+        <span class="price-main">₹990</span>
+        <span class="price-period">/year</span>
+        <span class="price-old">₹1,990</span>
       </div>
       <hr class="plan-divider">
       <ul class="plan-features">
@@ -861,7 +849,7 @@ footer a { color:var(--orange); text-decoration:none; }
     <div class="trust-card">
       <div class="trust-icon">🔒</div>
       <p class="trust-card-title">Cancel Anytime</p>
-      <p class="trust-card-text">No lock-in on monthly plans. Try with full confidence, zero risk.</p>
+      <p class="trust-card-text">No lock-in. Try with full confidence, zero risk.</p>
     </div>
     <div class="trust-card">
       <div class="trust-icon">🎓</div>
@@ -994,31 +982,6 @@ function openPrivacy(e){ e.preventDefault(); document.getElementById('privacy-mo
 function closePrivacy(){ document.getElementById('privacy-modal').classList.remove('open'); document.body.style.overflow=''; }
 document.getElementById('privacy-modal').addEventListener('click',function(e){ if(e.target===this) closePrivacy(); });
 document.addEventListener('keydown',function(e){ if(e.key==='Escape') closePrivacy(); });
-
-let isYearly = false;
-const prices = {
-  foundation:{ monthly:'₹499', monthly_old:'₹799', yearly:'₹3,990', yearly_old:'₹4,990', yearly_note:'2 months FREE · Save ₹1,000 vs monthly' },
-  board:     { monthly:'₹699', monthly_old:'₹1,099', yearly:'₹5,990', yearly_old:'₹6,990', yearly_note:'2 months FREE · Save ₹1,000 vs monthly' },
-  moral:     { monthly:'₹199', monthly_old:'₹399', yearly:'₹990',   yearly_old:'₹1,990', yearly_note:'2 months FREE · Save ₹1,000 vs monthly' }
-};
-function renderPrice(id,plan,yearly){
-  const p = prices[plan];
-  const c = document.getElementById('price-'+id);
-  if(yearly){
-    c.innerHTML='<span class="price-main">'+p.yearly+'</span><span class="price-period">/year</span><span class="price-old">'+p.yearly_old+'</span><p class="yearly-note">🎉 '+p.yearly_note+'</p>';
-  } else {
-    c.innerHTML='<span class="price-main">'+p.monthly+'</span><span class="price-period">/month</span><span class="price-old">'+p.monthly_old+'</span><p class="monthly-note">Billed monthly. Cancel anytime.</p>';
-  }
-}
-function toggleBilling(){
-  isYearly=!isYearly;
-  document.getElementById('billingToggle').classList.toggle('on',isYearly);
-  document.getElementById('lbl-monthly').classList.toggle('active',!isYearly);
-  document.getElementById('lbl-yearly').classList.toggle('active',isYearly);
-  renderPrice('foundation','foundation',isYearly);
-  renderPrice('board','board',isYearly);
-  renderPrice('moral','moral',isYearly);
-}
 </script>
 </body>
 </html>
